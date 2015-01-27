@@ -1,1 +1,7 @@
 <p>This is the partial for view 1.</p>
+<form ng-submit="submit()">
+    <input type="number" placeholder="Speed" ng-model="speed">
+    <input type="text" placeholder="Ausserorts oder Innerorts" ng-model="area">
+    <input type="submit">
+</form>
+<p class="fee" ng-if="fee">You have to pay {{fee}} EUR you bad motherfucker!</p>
